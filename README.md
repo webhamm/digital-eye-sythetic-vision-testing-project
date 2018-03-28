@@ -1,4 +1,4 @@
-# Advanced Testing Automation system - powered by ML-VISION-APP
+# Advanced Sythetic Visual Testing System - powered by digital-eye-api
 -------------------
 
 Author: Christopher Hamm
@@ -16,17 +16,12 @@ https://github.com/SeleniumBuilder/se-builder/wiki/JSON-Format
 
 
 #### Instructions
-  git pull ml-vision-api along with this project. Making sure both are in the same directory.
-  docker-compose build from this directory
-  Note: Make sure you have a trained ml-vision-api with test images and models
+  git pull digital-eye-sythetic-vision-testing-project.
+  docker-compose build from this digital-eye-sythetic-vision-testing-project/digital-eye-api
+  Note: Make sure you have a trained Digital Eye API with test images and models
 
 ##### Bad bot ideas
 Use Blackhole ips to drop images and other
 72.66.115.13 cnet1.cbsistatic.com
 72.66.115.13 cnet2.cbsistatic.com
 72.66.115.13 cnet3.cbsistatic.com
-
-
-
-Full screenshot
-https://github.com/yandex-qatools/ashot
