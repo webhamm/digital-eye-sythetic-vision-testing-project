@@ -1,0 +1,11 @@
+version: '3'
+services:
+  digital-eye-trainer-cnet-fd-page:
+    build:
+      context: ./
+    image: digital-eye-trainer/app:latest
+    volumes:
+        - $PWD/../projects/cnet-fd-page:/digital-eye-projects
+    # Start retraining
+    working_dir: /digital-eye-projects/ml-model
+    entrypoint: '/var/opt/script/retrain.sh'    

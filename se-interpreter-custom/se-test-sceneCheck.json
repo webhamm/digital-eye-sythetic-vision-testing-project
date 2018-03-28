@@ -1,0 +1,35 @@
+{
+    "type": "script",
+    "seleniumVersion": "2",
+    "formatVersion": 2,
+    "steps": [
+        {
+            "type": "get",
+            "url": "https://www.cnet.com"
+        },
+        {
+            "type": "saveScreenshot",
+            "name": "cnet-fd-page"
+        },
+        {
+            "type": "addCookie",
+            "name": "'CBS_INTERNAL",
+            "value": "0",
+            "options": "path=/,Session"
+        },
+        {
+          "type": "setMaximizeWindow",
+          "value": "max"
+        }, 
+        {
+            "type": "pause",
+            "waitTime": "1000"
+        },          
+        {
+            "type": "SceneCheck",
+            "name": "cnet-fd-page",
+            "path": "/digital-eye-projects/cnet-fd-page/eval-imgs/untested/",
+            "host": "digital-eye-api:5000"
+        }
+    ]
+}

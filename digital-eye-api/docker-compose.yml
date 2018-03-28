@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  digital-eye-api: 
+    build:
+      context: ./
+    image: digital-eye-api/app:latest
+    working_dir: /digital-eye-projects
+    entrypoint: 'python /var/www/app/digital-eye-api-server.py'
+    ports:
+      - "5000:5000"  
+    volumes:
+      - $PWD/../projects:/digital-eye-projects
+
+# You can attach to the service and watch logs
+# url test http://localhost:5000/digital-eye-api/v1.0/test?image_name={file name}.jpg&project={project nam}

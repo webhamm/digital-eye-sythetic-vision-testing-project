@@ -1,0 +1,30 @@
+{
+    "type": "script",
+    "seleniumVersion": "2",
+    "formatVersion": 2,
+    "steps": [
+        {
+            "type": "get",
+            "url": "https://www.cnet.com/news/apple-iphone-6-vs-iphone-6-plus/"
+        },
+        {
+            "type": "addCookie",
+            "name": "'CBS_INTERNAL",
+            "value": "0",
+            "options": "path=/,Session"
+        },
+        {
+            "type": "setMaximizeWindow",
+            "value": "max"
+        },  
+        {
+            "type": "pause",
+            "waitTime": "6000"
+        },
+        {
+            "type": "saveScreenshot",
+            "path": "/digital-eye-projects/",
+            "name": "cnet-article-page"            
+        }
+    ]
+}
