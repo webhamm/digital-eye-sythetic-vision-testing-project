@@ -10,7 +10,6 @@ services:
   digital-eye-api:
     build:
       context: $PWD/../digital-eye-api/
-      dockerfile: $PWD/../digital-eye-api/Dockerfile
     image: digital-eye-api/app:latest
     working_dir: /digital-eye-projects
     entrypoint: 'python /var/www/app/digital-eye-api-server.py'
