@@ -8,10 +8,6 @@
             "url": "https://www.cnet.com"
         },
         {
-            "type": "saveScreenshot",
-            "name": "cnet-fd-page"
-        },
-        {
             "type": "addCookie",
             "name": "'CBS_INTERNAL",
             "value": "0",

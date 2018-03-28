@@ -9,7 +9,7 @@ services:
 
   digital-eye-api:
     build:
-      context: ./
+      context: $PWD/../digital-eye-api/
       dockerfile: $PWD/../digital-eye-api/Dockerfile
     image: digital-eye-api/app:latest
     working_dir: /digital-eye-projects
@@ -25,7 +25,8 @@ services:
     image: se-interpreter-custom/app:latest
     volumes:
       - $PWD/../projects:/digital-eye-projects
-    entrypoint: 'node_modules/se-interpreter/interpreter.js se-test-sceneCheck.json --driver-host=selenium:4444 --browser-browserName=chrome'      
+    entrypoint: 'bash'      
+    #entrypoint: 'node_modules/se-interpreter/interpreter.js se-test-sceneCheck.json --driver-host=selenium:4444 --browser-browserName=chrome'      
     depends_on:
       - selenium
       - digital-eye-api
