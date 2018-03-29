@@ -1,4 +1,5 @@
 FROM gcr.io/tensorflow/tensorflow:latest-devel
+LABEL maintainer "Christopher Hamm" email "<email@christopherhamm.com>"
 WORKDIR /tensorflow
 RUN git pull
 WORKDIR /
@@ -11,4 +12,4 @@ ADD ./bin/retrain.sh /var/opt/script/retrain.sh
 ENV NAME DIGITAL-EYE-TRAINER
 
 # This container is much smaller since it doesn't require same libaries as the ML VISION API service
-# docker run -it -p 5000:5000 -v $HOME/projects/digital-eye-api/projects:/digital-eye-projects/ digital-eye-trainer
+# docker run -it -p 5000:5000 -v $PWD/../projects:/digital-eye-projects/ digital-eye-trainer
