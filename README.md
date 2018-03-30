@@ -6,6 +6,9 @@ Author: Christopher Hamm
 #### Description
   This was developed to contain all the script setups to setup a testing enviroment for GENERATION 1 sythetic testing program with Vision capabilities.
 
+#### Related presentation
+https://www.slideshare.net/secret/KWtwor5lB70FKF
+
 #### Usage
   Setup of testing for advanced testing.
 
